@@ -17,7 +17,7 @@ df_coor=df.corr()
 df_coor.head()
 plt.subplots(figsize=(9,9),dpi=1080,facecolor='w')# 设置画布大小，分辨率，和底色
 
-fig=sns.heatmap(df_coor,annot=True, vmax=1, square=True, cmap="Blues", fmt='.2g')#annot为热力图上显示数据；fmt='.2g'为数据保留两位有效数字,square呈现正方形，vmax最大值为1fig
+fig=sns.heatmap(df_coor,annot=True, vmax=1, square=True, cmap="Blues", fmt='.2f')#annot为热力图上显示数据；fmt='.2f'为数据保留小数点后两位,square呈现正方形，vmax最大值为1fig
 fig.get_figure().savefig('df_corr.png',bbox_inches='tight',transparent=True)#保存图片
 #bbox_inches让图片显示完整，transparent=True让图片背景透明
 
