@@ -10,8 +10,8 @@ from scipy import stats
 from matplotlib import pyplot as plt
 import seaborn as sns
 plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']#让中文的地方显示出来
-filePath_01 = 'C:/Users/46685/Desktop/科研数据/提取数据/新建处理后后后后.xlsx'
-df = pd.read_excel(filePath_01,sheet_name = 'Sheet1')
+data = 'C:/Users/46685/Desktop/科研数据/提取数据/新建处理后后后后.xlsx'
+df = pd.read_excel(data,sheet_name = 'Sheet1')
 df.head()
 df_coor=df.corr()
 df_coor.head()
