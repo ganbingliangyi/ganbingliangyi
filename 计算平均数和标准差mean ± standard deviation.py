@@ -7,7 +7,7 @@
 import numpy as np
 import pandas as pd
 data = 'C:/Users/46685/Desktop/科研数据/新建处理后后.xlsx'
-a= pd.read_excel(data,sheet_name = 'Sheet1')
+a= pd.read_excel(data,sheet_name = 'Sheet1')   # pd.read 数据处理
 b = a[["年龄","腰围"]]
 print(b)
 np.mean(b)   #计算平均数
